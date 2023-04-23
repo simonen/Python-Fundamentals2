@@ -19,7 +19,7 @@ while command != 'Love!':
 
 print(f"Cupid's last position was {index}.")
 failed_houses = len(houses) - houses.count(0)
-if failed_houses <= 0:
+if failed_houses == 0:
     print("Mission was successful.")
 else:
     print(f"Cupid has failed {failed_houses} places.")
