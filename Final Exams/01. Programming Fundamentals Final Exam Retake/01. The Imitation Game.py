@@ -12,7 +12,6 @@ while command != "Decode":
         string = command[2]
         encrypted_msg.insert(index, string)
         encrypted_msg = list("".join(encrypted_msg))
-
     elif action == "ChangeAll":
         subs1 = command[1]
         subs2 = command[2]
