@@ -9,5 +9,5 @@ for i in line:
     elements[key] += 1
 
 
-odds = [x for x in elements if elements[x] % 2 != 0 ]
+odds = [x for x in elements if elements[x] % 2 != 0]
 print(" ".join(odds))
