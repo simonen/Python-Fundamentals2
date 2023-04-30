@@ -27,6 +27,7 @@ for i in members:
         print(f"Side: {i}, Members: {members.count(i)}")
         print(f"! {users}")
 
+#invert the dictionary
 # users = [x for x in book.keys()]
 # bookz = {}
 # for j in range(len(members)):
