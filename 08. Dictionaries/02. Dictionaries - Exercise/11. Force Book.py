@@ -26,3 +26,15 @@ for i in members:
         users = "\n! ".join([x for x in book if book[x] == i])
         print(f"Side: {i}, Members: {members.count(i)}")
         print(f"! {users}")
+
+# users = [x for x in book.keys()]
+# bookz = {}
+# for j in range(len(members)):
+#     if members[j] not in bookz:
+#         bookz[members[j]] = []
+#     bookz[members[j]].append(users[j])
+#
+# for k, v in bookz.items():
+#     joined = "\n! ".join(v)
+#     print(f"Side: {k}, Members: {len(v)}")
+#     print(f"! {joined}")
