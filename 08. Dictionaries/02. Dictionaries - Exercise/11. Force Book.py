@@ -4,13 +4,11 @@ book = {}
 while command != "Lumpawaroo":
     is_user = False
     if " | " in command:
-        command = command.split(" | ")
-        force_side, force_user = command[0], command[1]
+        force_side, force_user = command.split(" | ")
         if force_user not in book:
             book[force_user] = force_side
     elif " -> " in command:
-        command = command.split(" -> ")
-        force_user, force_side = command[0], command[1]
+        force_user, force_side = command.split(" -> ")
         if force_user in book:
             del(book[force_user])
         book[force_user] = force_side
