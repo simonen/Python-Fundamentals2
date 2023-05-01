@@ -3,8 +3,7 @@ command = input()
 book = {}
 
 while command != "End":
-    command = command.split(" -> ")
-    company, eid = command[0], command[1]
+    company, eid = command.split(" -> ")
     if company not in book:
         book[company] = []
     if eid not in book[company]:
