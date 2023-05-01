@@ -2,8 +2,7 @@ command = input()
 database = {}
 
 while command != "end":
-    command = command.split(" : ")
-    course, student = command[0], command[1]
+    course, student = command = command.split(" : ")
     if course not in database:
         database[course] = []
     database[course].append(student)
