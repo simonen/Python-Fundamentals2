@@ -1,17 +1,14 @@
 book = {}
 n = int(input())
+defaults = [45, 250, 10]
 
-for i in range(n):
+for _ in range(n):
     dragon = input().split()
     color, name, damage, health, armor = dragon
     if color not in book:
         book[color] = {}
-    if damage == 'null':
-        damage = 45
-    if health == 'null':
-        health = 250
-    if armor == 'null':
-        armor = 10
+    damage, health, armor = [defaults[i] if [damage, health, armor][i] == 'null' else
+                             [damage, health, armor][i] for i in range(3)]
     if name not in book[color]:
         book[color][name] = []
     book[color][name] = list(map(int, [damage, health, armor]))
