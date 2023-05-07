@@ -1,12 +1,12 @@
-string = input()
+string = input().upper()
 
 uniq = []
 rage = []
 subs = ''
 n = ''
 for i, char in enumerate(string):
-    if char.lower() not in uniq and not char.isdigit():
-        uniq.append(char.lower())
+    if char not in uniq and not char.isdigit():
+        uniq.append(char)
     if not char.isdigit():
         subs += char
         if len(n) > 0:
@@ -14,7 +14,7 @@ for i, char in enumerate(string):
         n = ''
     else:
         if len(subs) > 0:
-            rage.append(subs.upper())
+            rage.append(subs)
         subs = ''
         n += char
     if i + 1 == len(string):
